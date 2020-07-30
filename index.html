@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">	
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
 
@@ -21,9 +21,41 @@
 
 </head>
 <body>
-	<div id="banner"><h1>Aprende a crear tu propia <strong>Web</strong> en <em> 2 Horas </em></h1></div>
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon m-3" >
+  <a class="navbar-brand" href="#">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Messages</a>
+      </li>
+      <li class="nav-item dropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  <br>
+
+  <div id="banner"><h1>Aprende a crear tu propia <strong>Web</strong> en <em> 2 Horas </em></h1></div>
 	<div class="text"><p>Nuestro objetivo es que a través de tu investigación e inspección de los elementos que aparecen en esta página puedas aprender, por ti mismo, a crear una Web. <br> <br>
 		<strong>Lo único que necesitaras</strong> para esta tarea es tu <em>interés</em>, tu <em>esfuerzo</em> y tu <em>creatividad</em>.</p></div> 
+
+
 	
 	<div id="service" class="cuadros normal-text"><h2> 
         <img src="images/Service.png" alt="Service Img" width="50"><br>Servicios brindados por la página:</h2>
@@ -37,11 +69,11 @@
 	</div> 
 <div class="wrapper">
    
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-     <h1 class="text text-underline">Bootstrap Sidebar</h1>
-        </div>
+<!-- Sidebar -->
+ <nav id="sidebar">
+    <div class="sidebar-header">
+    <h1 class="text text-underline">Bootstrap Sidebar</h1>
+    </div>
 
     <ul class="list-unstyled components">
             <p class="normal-text">Dummy Heading</p>
@@ -85,49 +117,83 @@
         </ul>
     </nav>
 
+
+<h2 class="text text-underline"><strong>Banner example:</strong></h2>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
 </div>
+
 
 	<h2 class="text text-underline"><strong>Avatar examples:</strong></h2>
 	<div><ul>
-		<li><img src="images/Avatar 1.jpeg" class="avatar avatar-shadow"></li>
+		<li><img src="images/Avatar 1.jpeg" class="avatar1 avatar1-shadow"></li>
 		<br>
-		<li><img src="images/Avatar 2.jpeg" class="avatar"></li>
+		<li><img src="images/Avatar 2.jpeg" class="avatar1"></li>
 		<br>
-		<li><img src="images/Avatar 3.jpeg" class="avatar avatar-alt"></li>
+		<li><img src="images/Avatar 3.jpeg" class="avatar1 avatar1-alt"></li>
 	</ul></div>	
 
-	<h2 class="text text-underline"> <strong>Card - Tarjetas</strong> </h2>
+	<h2 class="text text-underline"> <strong>Card - Tarjetas expamles:</strong> </h2>
 	<p class="normal-text"> <strong>Utilizando la libreria de Bootstrap podemos lograr esto. Es importante agragar la meta data en el Head para que funcione.</strong></p>
 
-<div class="container row">
-<div class="card">
+<div class="container">
+  <div class="row">
+<div class="card col-xs-12 col-sm-6 col-md-3">
   <img src="images/briefcase.png" alt="picture description" width="100">
   <h2>Rápido</h2>
   <p >Un servicio rápido, <strong>muy rápido</strong></p>
 </div>
 
-<div class="card">
+<div class="card col-xs-12 col-sm-6 col-md-3">
   <img src="images/diamond.png" alt="picture description" width="100">
   <h2>Simple</h2>
   <p>Un servicio simple, <strong>muy simple</strong></p>
 </div>
 
-<div class="card">
+<div class="card col-xs-12 col-sm-6 col-md-3">
   <img src="images/heart.png" alt="picture description" width="100">
   <h2 >Increíble</h2>
   <p >Un increíble servicio, <strong>muy increíble</strong></p>
 </div>
 
-<div class="card">
+<div class="card col-xs-12 col-sm-6 col-md-3">
   <img src="images/laptop.png" alt="picture description" width="100">
   <h2 >Interesante</h2>
   <p >Un servicio interesante, <strong>muy interesante</strong></p>
 </div>	
+</div>
 </div>	
 	
+<h2 class="text text-underline"> <strong>Card Category expamples:</strong> </h2>  
+<div class="cards m-4">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    Breakfast
+  </div>
 
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Lunch
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Dinner
+  </div>
+</div>
     <h2 class="text text-underline"> <strong>Product Card:</strong> </h2>
-<div id="card-product">
+
+<div class="card-product cuadros">
+  <img src="images/producto.jpg" alt="picture description" width="200" height="180"/>
+  <div class="card-product-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+
+<div class="card-product2">
     <img src="images/producto.jpg" alt="picture description" width="200" height="180">
     <div class="normal-text cuadros text-product"><br><br><h2>Detalle del producto</h2><br>
     <p>Precio</p></div>
@@ -159,10 +225,79 @@
   <input type="color">    
   </div>
 
-<h2 class="text text-underline"><strong>Aplicación:</strong></h2>
- 
- <button class="btn btn-danger btn-block button1" style="width: 250px" style="height: 10px"><a href="Aplication/index.html">Click me for App</a></button>
+<h2 class="text text-underline"><strong>Formulario - Form Bootstrap example:</strong></h2>  
 
+<div class="container mt-5" style="background-color: white">
+<div  class="row d-flex justify-content-center">
+  <div class="col-12 col-sm-8">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Put your email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <br>
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div> 
+</div>
+</div>
+
+
+<h2 class="text text-underline"><strong>Search form example:</strong></h2>
+
+<div class="w-70 m-4">
+<form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+</form>
+</div>
+<h2 class="text text-underline"><strong>Notification examples:</strong></h2>
+<div class="m-4">
+  <div class="notification">
+  <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+  <div class="notification-content">
+    <p><small>14th January</small></p>
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit.</p>
+  </div>
+
+  <div class="notification-actions">
+    <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+    <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+  </div>
+</div>
+
+<div class="notification">
+  <img src='https://kitt.lewagon.com/placeholder/users/Eschults' class="avatar-large"/>
+  <div class="notification-content">
+    <p><small>9th January</small></p>
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit.</p>
+  </div>
+
+  <div class="notification-actions">
+    <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+    <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+  </div>
+</div>
+</div>
+
+<h2 class="text text-underline"><strong>Aplicación con Js:</strong></h2>
+ 
+ <a class="btn btn-gradient" href="Aplication/index.html">Click me for App</a>
+ 
 
 <div class="text">
         <em>Si te intereso lo que viste:</em> <strong>Para aprender mas y con los mejores maestros</strong> <button class="btn btn-primary"><a href="https://www.lewagon.com" target="_blanck"> Click Here </a></button>
